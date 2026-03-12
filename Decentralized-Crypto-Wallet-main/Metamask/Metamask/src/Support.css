@@ -1,0 +1,65 @@
+.support-page {
+  padding: 80px 500px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #f7fafc, #e2e8f0);
+  min-height: 100vh;
+  color: #1e2133;
+}
+
+.support-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.support-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #3846a3;
+}
+
+.support-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.support-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.support-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.support-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #375b78;
+}
+
+.support-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.support-link {
+  font-size: 0.9rem;
+  color: #3846a3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.support-link:hover {
+  text-decoration: underline;
+}

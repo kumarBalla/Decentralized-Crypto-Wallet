@@ -1,0 +1,136 @@
+/* ========== Page Container ========== */
+.crypto-management {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0a0f24, #111c42 60%, #000814);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding-left: 600px;
+  padding-right: 600px;
+}
+
+/* Title */
+.crypto-management h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+  background: linear-gradient(90deg, #00eaff, #4f8cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ========== Form Card ========== */
+.crypto-form {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 35px 50px;
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Form Row Labels & Inputs */
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-row label {
+  font-size: 15px;
+  color: #c5d4ff;
+  font-weight: 500;
+}
+
+.form-row input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transition: 0.2s;
+}
+
+.form-row input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 0 2px #00eaffb3 inset;
+}
+
+/* Buttons */
+.form-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.save-btn,
+.cancel-btn {
+  width: 48%;
+  padding: 12px 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+/* Save Button */
+.save-btn {
+  background: linear-gradient(90deg, #00eaff, #4f8cff);
+  color: #000;
+}
+
+.save-btn:hover {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.cancel-btn:hover {
+  background: rgba(255, 255, 255, 0.28);
+  transform: translateY(-2px);
+}
+
+/* ========== Animations ========== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Support */
+@media (max-width: 480px) {
+  .crypto-form {
+    padding: 28px 22px;
+  }
+  .save-btn, .cancel-btn {
+    font-size: 14px;
+  }
+}

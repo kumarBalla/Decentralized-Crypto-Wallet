@@ -1,0 +1,65 @@
+.developer-page-content {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #666467, #41404560, #7e7c81); /* dark gradient */
+  color: #f5f5f5; /* light text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 60px;
+  border-radius: 15px;
+}
+
+/* Heading style */
+.developer-page-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #fff, #bbb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 520px;   /* adjust as needed */
+  padding-right: 485px;  /* adjust as needed */
+}
+
+/* Paragraph style */
+.developer-page-content p {
+  max-width: 600px;
+  line-height: 1.8;
+  color: #ccc; /* lighter paragraph text for dark background */
+  font-size: 1.1rem;
+}
+
+/* Optional: buttons if you add later */
+.developer-page-content button {
+  margin-top: 30px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.developer-page-content button:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .developer-page-content h1 {
+    font-size: 2.2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .developer-page-content p {
+    font-size: 1rem;
+  }
+}

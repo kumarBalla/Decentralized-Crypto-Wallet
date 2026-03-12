@@ -1,0 +1,95 @@
+.web3-page {
+  padding: 80px 100px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #2c3034, #3f4347);
+  min-height: 100vh;
+  color: #1e2133;
+  box-sizing: border-box;
+}
+
+/* Top Section */
+.web3-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.web3-top-left h1 {
+  font-size: 3.8rem;
+  color: #3846a3;
+  margin-bottom: 15px;
+}
+
+.web3-top-left p {
+  font-size: 1.1rem;
+  color: #f7eaea;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.web3-btn {
+  padding: 10px 25px;
+  background: #375b78;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.web3-btn:hover {
+  background: #2e4661;
+}
+
+.web3-top-right img {
+  max-width: 1400px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Bottom Cards */
+.web3-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.web3-card {
+  background: #1e1d22b9;
+  padding: 25px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.web3-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.web3-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #375b78;
+}
+
+.web3-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .web3-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .web3-top-right img {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,73 @@
+/* Card Page Container */
+.card-page {
+  padding: 80px 220px; /* reduced padding for fullscreen responsiveness */
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #f7fafc, #e2e8f0);
+  min-height: 100vh;
+  color: #1e2133;
+  box-sizing: border-box;
+  margin-left: 60px;
+  border-radius: 15px;
+}
+
+/* Header */
+.card-header {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-right: 20px;
+}
+
+.card-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #3846a3;
+}
+
+.card-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* two cards per row on large screens */
+  gap: 40px 30px; /* vertical gap 40px, horizontal gap 30px */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Card */
+.feature-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Content */
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #375b78;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #707070;
+  line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: 1fr; /* single column on smaller screens */
+    gap: 30px 20px;
+  }
+}

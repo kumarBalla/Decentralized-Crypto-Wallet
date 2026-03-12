@@ -1,0 +1,142 @@
+/* General Page */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #3b82f6);
+  font-family: "Poppins", sans-serif;
+  padding-left: 500px;
+  padding-right: 600px;
+  padding-top: 40px;
+}
+
+/* Card */
+.login-card {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #3b82f6);
+  padding: 40px 30px;
+  border-radius: 20px;
+  width: 380px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.login-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.4);
+}
+
+/* Titles */
+.login-title {
+  font-size: 28px;
+  color: #fffefe;
+  margin-bottom: 10px;
+}
+.login-subtitle {
+  color: #fcfafa;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #f9f6f6;
+}
+.input-group input {
+  width: 100%;
+  max-width: 350px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #fefdfd;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.input-group input:focus {
+  border-color: #4caf50;
+}
+
+/* Password field */
+.password-wrapper {
+  position: relative;
+}
+.toggle-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+}
+
+/* Buttons */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.login-btn:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #aaa;
+  position: relative;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+}
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+/* Google Button Container */
+#googleSignInDiv {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Error message */
+.error-msg {
+  color: red;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* Bottom text */
+.bottom-text {
+  margin-top: 15px;
+  color: #555;
+}
+.link-text {
+  color: #4caf50;
+  cursor: pointer;
+  font-weight: 600;
+}
+.link-text:hover {
+  text-decoration: underline;
+}

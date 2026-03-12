@@ -1,0 +1,63 @@
+/* Container */
+.earn-page {
+  padding: 80px 10%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #3d446a, #1e2133);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+/* Header */
+.earn-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.earn-header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.earn-header p {
+  font-size: 1.2rem;
+  color: #c1c1c1;
+}
+
+/* Cards */
+.earn-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.earn-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px 25px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.earn-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.earn-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #f3f3f3;
+}
+
+.earn-card p {
+  font-size: 1rem;
+  color: #c1c1c1;
+  line-height: 1.5;
+}

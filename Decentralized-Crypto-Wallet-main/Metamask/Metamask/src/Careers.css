@@ -1,0 +1,72 @@
+.careers-page {
+  padding: 80px 500px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #f7fafc, #e2e8f0);
+  min-height: 100vh;
+  color: #1e2133;
+}
+
+.careers-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.careers-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #3846a3;
+}
+
+.careers-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.careers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.career-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.career-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: #375b78;
+}
+
+.job-location {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.career-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.apply-link {
+  font-size: 0.9rem;
+  color: #3846a3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.apply-link:hover {
+  text-decoration: underline;
+}

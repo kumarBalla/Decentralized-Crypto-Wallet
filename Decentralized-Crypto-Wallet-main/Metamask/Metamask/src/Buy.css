@@ -1,0 +1,179 @@
+.buy-main {
+  display: flex;
+  justify-content: flex-start; /* align left and right closer */
+  align-items: flex-start;
+  background: linear-gradient(180deg, #3d446a, #1e2133);
+  color: #fff;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  padding-top:100px; /* reduced and consistent */
+  padding-left: 100px;
+  padding-bottom: 5px;
+  gap: 50px; /* smaller gap between left and right */
+}
+
+
+/* LEFT SECTION */
+.buy-info {
+  flex: 1;
+  max-width: 500px;
+  padding-right: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.buy-title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.buy-title span {
+  color: #00c896;
+}
+
+.buy-desc {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cfd2e1;
+  margin-bottom: 40px;
+}
+
+/* Wallet Summary inside left */
+.wallet-summary {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  gap: 60px;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+/* Right Side Buy/Sell Card */
+.transaction-card-modern {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 60px;
+  border-radius: 20px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(208, 200, 200, 0.4);
+  margin-top: 80px;
+  padding-bottom: 50px;
+}
+
+/* Buttons, forms, messages (same as your code) */
+.action-toggle-modern {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.action-toggle-modern button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: #2c2f44;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.action-toggle-modern button.active {
+  background: #00c896;
+}
+
+.action-toggle-modern button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.form-modern {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-modern label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-modern select,
+.form-modern input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: #a4a9cd;
+  color: #fff;
+}
+
+.total-preview {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 1.1rem;
+  color: #00e1a1;
+}
+
+.transaction-btn-modern {
+  background: #00c896;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+
+.transaction-btn-modern:hover {
+  background: #00a77d;
+}
+
+.message {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.message.success {
+  color: #00e676;
+}
+
+.message.error {
+  color: #ff5252;
+}
+
+/* Responsive */
+@media (max-width: 950px) {
+  .buy-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 5%;
+  }
+
+  .buy-info {
+    max-width: 100%;
+  }
+
+  .transaction-card-modern {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .wallet-summary {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+.footer-page{
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #f9f9fa;
+}

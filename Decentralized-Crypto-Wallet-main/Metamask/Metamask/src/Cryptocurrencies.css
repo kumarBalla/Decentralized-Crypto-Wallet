@@ -1,0 +1,106 @@
+/* ✅ Page layout */
+.crypto-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(120deg, #0f172a, #1e293b);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+/* ✅ Page Titles */
+.page-title {
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.page-subtitle {
+  font-size: 16px;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+/* ✅ Table Container */
+.crypto-table-wrapper {
+  width: 100%;
+  max-width: 1050px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+  overflow-x: auto;
+}
+
+/* ✅ Table */
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+  font-size: 16px;
+}
+
+.crypto-table thead tr {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.crypto-table th {
+  padding: 15px;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.crypto-table tbody tr {
+  transition: all 0.2s ease-in-out;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.crypto-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: scale(1.01);
+}
+
+/* ✅ Table cells */
+.crypto-table td {
+  padding: 14px;
+}
+
+/* ✅ Loading & Error */
+.loading-text,
+.error-text {
+  margin-top: 40px;
+  font-size: 18px;
+  color: #facc15;
+  font-weight: 600;
+}
+
+/* ✅ Pointer cursor for clickable cryptos */
+.crypto-table tbody tr[style*="pointer"] {
+  cursor: pointer;
+}
+
+/* ✅ Disable row for zero-quantity cryptos */
+.crypto-table tbody tr[style*="not-allowed"] {
+  opacity: 0.4;
+}
+
+/* ✅ Responsiveness */
+@media (max-width: 680px) {
+  .page-title {
+    font-size: 28px;
+  }
+  .crypto-table th,
+  .crypto-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

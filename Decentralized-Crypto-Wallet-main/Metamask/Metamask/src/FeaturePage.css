@@ -1,0 +1,31 @@
+.feature-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #c1b3b3, #dce0d7, #a39999);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 60px;
+  border-radius: 15px;
+}
+
+.feature-page h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, rgb(18, 8, 8), #bbb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 520px;
+  padding-right: 485px;
+}
+
+.feature-page p {
+  max-width: 600px;
+  line-height: 1.8;
+  color: #382626;
+  font-size: 1.1rem;
+}

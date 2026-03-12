@@ -1,0 +1,88 @@
+.platforms-page {
+  padding: 80px 160px; /* reduced padding for fullscreen responsiveness */
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #f0f4f8, #e1e8f0);
+  min-height: 100vh;
+  color: #1e2133;
+  box-sizing: border-box;
+}
+
+/* Header */
+.platforms-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.platforms-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #3846a3;
+}
+
+.platforms-header p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Card Grid */
+.platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Platform Cards */
+.platform-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.platform-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Platform Card Content */
+.platform-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #3846a3;
+}
+
+.platform-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #375b78;
+}
+
+.platform-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .platforms-page {
+    padding: 60px 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .platforms-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .platforms-header p {
+    font-size: 1rem;
+  }
+}

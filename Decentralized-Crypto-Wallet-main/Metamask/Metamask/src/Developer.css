@@ -1,0 +1,292 @@
+/* --- Main Developer Page --- */
+.developer-page {
+  margin-left: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a1a, #2b2b2b);
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  border: 1px solid #222;
+  border-radius: 10px;
+  color: white;
+}
+
+/* --- Container Layout --- */
+.developer-container {
+  width: 90%;
+  margin-left: 60px;
+  display: flex;
+  gap: 40px;
+  padding-left: 100px;
+  justify-content: space-between;
+}
+
+/* --- Developer Cards Grid --- */
+.developer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  flex: 3;
+}
+
+/* --- Individual Developer Card --- */
+.developer-card {
+  border-radius: 15px;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #2f2f2f, #404040);
+  color: #f5f5f5;
+  font-weight: 500;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.08);
+  width: 420px;
+  height: 200px;
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* --- Hover Effect --- */
+.developer-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  background: linear-gradient(135deg, #3d3d3d, #505050);
+  box-shadow: 0 15px 30px rgba(255, 255, 255, 0.25);
+}
+
+/* --- Developer Text --- */
+.developer-info h2 {
+  margin: 0 0 8px 0;
+  font-weight: bold;
+  font-size: 22px;
+  color: #fff;
+}
+
+.developer-info p {
+  margin: 0;
+  font-size: 15px;
+  color: #dcdcdc;
+}
+
+/* --- Right Side Links Section --- */
+.developer-right-links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: sticky;
+  top: 100px;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+/* --- Section Titles --- */
+.developer-right-links h3 {
+  margin-bottom: 4px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #66b2ff;
+}
+
+/* --- Links List --- */
+.developer-right-links ul {
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.developer-right-links li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #b5b5b5;
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.developer-right-links li:hover {
+  color: #66b2ff;
+}
+
+.developer-right-links li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #66b2ff;
+  transition: width 0.3s ease;
+}
+
+.developer-right-links li:hover::after {
+  width: 40%;
+}
+
+/* --- Divider Line --- */
+.developer-right-links hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #333;
+  width: 80%;
+}
+
+/* --- Social Icons --- */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-left: 20px;
+}
+
+.social-icons svg {
+  cursor: pointer;
+  transition: transform 0.25s ease, color 0.25s ease;
+  color: #bbb;
+}
+
+.social-icons svg:hover {
+  transform: scale(1.25);
+  color: #66b2ff;
+}
+
+/* --- About MetaMask Section --- */
+.about-section {
+  margin-top: 10px;
+}
+
+.about-section h3 {
+  color: #66b2ff;
+}
+
+.about-section li {
+  color: #aaa;
+}
+
+.about-section li:hover {
+  color: #66b2ff;
+}
+
+/* --- Responsive Styles --- */
+
+/* --- For 1200px screens --- */
+@media (max-width: 1200px) {
+  .developer-container {
+    gap: 25px;
+    padding-left: 40px;
+  }
+  .developer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* --- For tablets and small laptops --- */
+@media (max-width: 992px) {
+  .developer-container {
+    flex-direction: column;
+    margin-left: 20px;
+    padding-left: 0;
+  }
+  .developer-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .developer-card {
+    width: 90%;
+    max-width: 420px;
+  }
+  .developer-right-links {
+    position: relative;
+    top: 0;
+    padding: 0;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* --- For portrait tablets and large phones --- */
+@media (max-width: 768px) {
+  .developer-page {
+    margin-left: 0;
+    padding: 80px 20px;
+  }
+  .developer-card {
+    width: 95%;
+    padding: 18px;
+    height: auto;
+  }
+  .developer-info h2 {
+    font-size: 18px;
+  }
+  .developer-info p {
+    font-size: 13px;
+  }
+  .developer-right-links li {
+    font-size: 15px;
+  }
+  .social-icons {
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+
+/* --- For small phones --- */
+@media (max-width: 480px) {
+  .developer-page {
+    margin: 0;
+    padding: 80px 0;
+  }
+
+  .developer-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .developer-grid {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .developer-card {
+    width: 100%;
+    padding: 14px;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .developer-card:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .developer-card:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .developer-info h2 {
+    font-size: 16px;
+  }
+
+  .developer-info p {
+    font-size: 12px;
+  }
+
+  .developer-right-links li {
+    font-size: 14px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .social-icons svg {
+    width: 18px;
+    height: 18px;
+  }
+}

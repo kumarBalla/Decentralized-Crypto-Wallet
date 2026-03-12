@@ -1,0 +1,86 @@
+.perps-page {
+  padding: 80px 150px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #f7fafc, #e2e8f0);
+  min-height: 100vh;
+  color: #1e2133;
+  box-sizing: border-box;
+  margin-left: 60px;
+}
+
+.perps-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.perps-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #3846a3;
+}
+
+.perps-header p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Card Grid */
+.perps-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px 20px; /* vertical x horizontal gap */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Cards */
+.perps-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.perps-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.perps-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #375b78;
+}
+
+.perps-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .perps-page {
+    padding: 60px 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .perps-page {
+    padding: 50px 30px;
+    margin-left: 0;
+  }
+
+  .perps-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .perps-header p {
+    font-size: 1rem;
+  }
+}

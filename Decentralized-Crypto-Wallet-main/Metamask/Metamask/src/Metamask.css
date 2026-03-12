@@ -1,0 +1,295 @@
+.metamask-page {
+  min-height: 100vh;
+  background-color: #d0e7ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left:50px;
+  padding-top: 80px;
+  padding-right: 310px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 0px;
+  border-radius: 15px;
+}
+
+.metamask-header .image{
+  display: flex;
+}
+
+.metamask-header .image img{
+  padding-right: 100px;
+}
+
+.metamask-header h1 {
+  font-size: 7rem;
+  font-weight: 600;
+  color: #1a1a4a;
+  margin-bottom: 10px;
+  text-align: center;
+  text-align: left;
+  padding-left: 80px;
+  margin-right: 200px;
+}
+
+.metamask-header p {
+  padding-left: 10px;
+  font-size: 2rem;
+  color: #1a1a4a;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: 80px;
+  text-align: start;
+}
+
+.metamask-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: left;
+  flex-wrap: wrap;
+  text-align: start;
+  padding-left: 80px;
+}
+
+.buy-btn {
+  background-color: transparent;
+  color: #26232a;
+  padding: 10px 25px;
+  border: 2px solid #1a1a4a;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.buy-btn:hover {
+   background-color: rgb(101, 115, 182);
+   color: aliceblue;
+}
+
+.swap-btn1 {
+  background-color: transparent;
+  color: #1a1a4a;
+  padding: 10px 25px;
+  border: 2px solid #1a1a4a;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.swap-btn1:hover{
+  background-color: rgb(101, 115, 182);
+  color: aliceblue;
+}
+
+.metamask-search {
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 30px;
+  padding-left: 80px;
+  margin-top: 40px;
+}
+
+.metamask-search input {
+  height: 30px;
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 15px;
+  border: none;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(249, 250, 251, 0.15);
+  background-color: #fff;
+}
+
+.metamask-token {
+  width: 100%;
+  max-width: 1250px;
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.token-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.token-icon {
+  font-size: 1.8rem;
+}
+
+.token-name {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.token-address {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copy-btn {
+  padding: 5px 10px;
+  border: none;
+  background-color: #1a1a4a;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .metamask-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .metamask-header p {
+    font-size: 1rem;
+  }
+
+  .buy-btn, .swap-btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .metamask-search input {
+    font-size: 0.9rem;
+  }
+
+  .token-name {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .metamask-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .metamask-header p {
+    font-size: 0.9rem;
+  }
+
+  .buy-btn, .swap-btn {
+    padding: 6px 15px;
+    font-size: 0.85rem;
+  }
+}
+
+.metamask-graph{
+  width: 100%;
+  max-width: 1300px;
+} 
+
+/* --- Popular Cryptocurrencies --- */
+.popular-crypto-section {
+  margin-top: 40px;
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 1250px;
+}
+
+.popular-crypto-section h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.crypto-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.crypto-card1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  background: rgb(254, 253, 253);
+  border-radius: 14px;
+  padding: 5px 1px;
+  transition: 0.3s ease;
+  border: 1px solid #f5f6f8;
+}
+
+.crypto-card1:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(142, 143, 200, 0.08);
+}
+
+.crypto-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+.crypto-info h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #6888cd;
+}
+
+.crypto-info p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.crypto-right {
+  text-align: right;
+  justify-content: end;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.footer-page1{
+  margin-top: 10px;
+  width: 100%;
+  max-width: 1300px;
+  border-radius: 15px ;
+}
+
+/* --- Popular Crypto Cards Grid (Scrollable on Mobile) --- */
+.crypto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .crypto-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 10px;
+  }
+
+  .crypto-grid::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .crypto-grid::-webkit-scrollbar-thumb {
+    background-color: #00ffb3;
+    border-radius: 10px;
+  }
+
+  .crypto-card {
+    min-width: 160px;
+    flex: 0 0 auto;
+  }
+}
+
