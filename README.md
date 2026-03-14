@@ -172,12 +172,14 @@ http://localhost:5173
 
 **Kumar Balla**
 
-GitHub:
+🔗 **GitHub:**
 https://github.com/kumarBalla
 
-LinkedIn:
-(Add your LinkedIn link here)
+💼 **LinkedIn:**
+https://www.linkedin.com/in/kumar-balla-402b672b4/
 
+🧾 **Naukri:**
+https://www.naukri.com/mnjuser/profile?id=&altresid
 ---
 
 # ⭐ Support
